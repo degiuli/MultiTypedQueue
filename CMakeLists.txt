@@ -36,7 +36,7 @@ set(PROJECT_DESCRIPTION "MultiTypedQueue")
 # The version number.
 set (MultiTypedQueue_VERSION_MAJOR 1)
 set (MultiTypedQueue_VERSION_MINOR 0)
-set (MultiTypedQueue_VERSION_PATCH 0)
+set (MultiTypedQueue_VERSION_PATCH 1)
 
 # Debugging Options: 1 for debugging, 0 for release
 set (CMAKE_VERBOSE_MAKEFILE 1)
@@ -72,3 +72,6 @@ include_directories("${PROJECT_SOURCE_DIR}")
  
 # Executable
 add_executable(MultiTypedQueue MultiTypedQueue.cpp)
+
+enable_testing()
+add_test(NAME MultiTypedQueue COMMAND bin)
